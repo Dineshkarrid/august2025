@@ -8,9 +8,9 @@ import java.util.Scanner;
 	public class Lab11 {
 
 	public static void main(String[] args) {
-		        Scanner scanner = new Scanner(System.in);
+		        Scanner sc = new Scanner(System.in);
 		        System.out.print("Enter a date (dd-MM-yyyy): ");
-		        String input = scanner.nextLine();
+		        String input = sc.nextLine();
 		        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		        LocalDate inputDate = LocalDate.parse(input, formatter);
 		        LocalDate currentDate = LocalDate.now();
@@ -18,11 +18,6 @@ import java.util.Scanner;
 		        System.out.println("\nDuration from " + inputDate + " to " + currentDate + " is:");
 		        System.out.println("Years: " + period.getYears());
 		        System.out.println("Months: " + period.getMonths());
-		        System.out.println("Days: " + period.getDays());
-
-		        
+		        System.out.println("Days: " + period.getDays());   
 		    }
-		
-
-	
 }

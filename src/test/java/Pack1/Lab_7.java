@@ -1,5 +1,4 @@
 package Pack1;
-
 import java.util.Scanner;
 
 class person {
@@ -40,7 +39,7 @@ class person {
 		
 
 }
-public class Lab3{
+public class Lab_7{
 	public static void main(String[]args) {
 		Scanner sc=new Scanner (System.in);
 		System.out.println("enter mobile number");
@@ -54,4 +53,5 @@ public class Lab3{
 		System.out.println("mobile number is"+x);
 	}
 	
+
 }
