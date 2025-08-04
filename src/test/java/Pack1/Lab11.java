@@ -1,0 +1,28 @@
+package Pack1;
+
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+	public class Lab11 {
+
+	public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+		        System.out.print("Enter a date (dd-MM-yyyy): ");
+		        String input = scanner.nextLine();
+		        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		        LocalDate inputDate = LocalDate.parse(input, formatter);
+		        LocalDate currentDate = LocalDate.now();
+		        Period period = Period.between(inputDate, currentDate);
+		        System.out.println("\nDuration from " + inputDate + " to " + currentDate + " is:");
+		        System.out.println("Years: " + period.getYears());
+		        System.out.println("Months: " + period.getMonths());
+		        System.out.println("Days: " + period.getDays());
+
+		        
+		    }
+		
+
+	
+}
