@@ -57,7 +57,7 @@ try(PreparedStatement pt3=con.prepareStatement(deletesql)){
 	int rows=pt3.executeUpdate();
 	System.out.println("deleted rows"+rows);
 }catch(SQLException e) {
-	e.printStackTrace();
+	
 }
 	}
 
