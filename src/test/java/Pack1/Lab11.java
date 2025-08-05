@@ -18,6 +18,6 @@ import java.util.Scanner;
 		        System.out.println("\nDuration from " + inputDate + " to " + currentDate + " is:");
 		        System.out.println("Years: " + period.getYears());
 		        System.out.println("Months: " + period.getMonths());
-		        System.out.println("Days: " + period.getDays());   
+		        System.out.println("Days: " + period);   
 		    }
 }
