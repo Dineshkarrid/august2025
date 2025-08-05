@@ -73,6 +73,10 @@ public static void main(String args[]) {
 	System.out.println(smithacc);
 
 System.out.println(kathyacc);
+System.out.println(kathyacc.getbalance());
+System.out.println(smithacc.getbalance());
+smithacc.withdraw(567);
+System.out.println(smithacc.getbalance());
 System.out.println(smith.getName());
 smith.setName("dinesh");
 System.out.println(smith.getName());
