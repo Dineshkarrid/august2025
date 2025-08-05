@@ -69,6 +69,8 @@ public static void main(String args[]) {
 	smithacc.deposit(600);
 	kathyacc.deposit(567);
 	smithacc.withdraw(80);
+	System.out.println("hi this about creating bank account for people");
+	
 	System.out.println(smith);
 	System.out.println(smithacc);
 
