@@ -74,7 +74,7 @@ class SavingsAccount extends Account1 {
         }
     }
 }
-public class Lab_22{
+public class Lab_25{
 	public static void main (String args[]) {
 		Person12 Smith=new Person12("smith",67);
 		Person12 Kathy=new Person12("kathy",98);
