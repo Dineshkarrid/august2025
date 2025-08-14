@@ -1,0 +1,8 @@
+﻿WebElements,id,name,linktext,PartialLinkTest,css(tag and id),css(tag and class) ,css(tag & attribute),"css(tag, class and attribute)",innertext,xpath
+FirstName,input-firstname,firstname,NA,NA,input#input-firstname,input.form-control(5),input[placeholder='First Name'],input.form-control[placeholder='First Name'],,
+LastName,input-lastname,lastname,NA,NA,input#input-lastname,input.form-control,input[placeholder='Last Name'],input.form-control[placeholder='Last Name'],,
+Email,input-email,email,NA,NA,input#input-email,input.form-control,input[placeholder='E-Mail'],input.form-control[placeholder='E-Mail'],,
+Password,input-password,password,NA,NA,input#input-password,input.form-control,input[placeholder='Password'],input.form-control[placeholder='Password'],,
+Subscribe,input-newsletter,newsletter,NA,NA,input#input-newsletter,input.form-check-input,input[type='checkbox'],input.form-check-input[type='checkbox'],,
+Policy,NA,agree,NA,NA,NA,input.form-check-input,input[type='checkbox'],input.form-check-input[type='checkbox'],,
+Submit,NA,NA,NA,NA,NA,button.btn btn-primary,input[type='submit'],button.btn btn-primary[type='submit'],,
