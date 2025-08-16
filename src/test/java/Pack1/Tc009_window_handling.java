@@ -24,6 +24,8 @@ public class Tc009_window_handling {
 		driver.switchTo().window(cwindow);
 		System.out.println("url is :" +driver.getCurrentUrl());
 	}
+	driver.close();
+	driver.quit();
 	
 	}
 }

@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Tc007_select_dropdown {
 
 	public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class Tc007_select_dropdown {
 		//sle.selectByIndex(5);
 		List<WebElement>elecount=sle.getOptions();
 		for(WebElement ele:elecount) {
-			System.out.println("The values :"+ele.getText());
+			System.out.println(ele.getText());
 		}
 	}
 
