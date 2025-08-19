@@ -25,7 +25,7 @@ driver.findElement(By.id("prompt")).click();
 Alert palert=driver.switchTo().alert();
 System.out.println("message is : "+palert.getText());
 palert.sendKeys("dinesh");
-//palert.accept();
+palert.accept();
 }
 
 }
