@@ -9,16 +9,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Lab9_lab4crossbrowser {
+	WebDriver driver;
 	@Parameters("browser")
   @Test
   public void test2(String browser) throws InterruptedException {
-		WebDriver driver;
+		
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			  driver=new ChromeDriver();
@@ -65,4 +67,10 @@ public class Lab9_lab4crossbrowser {
 			
 		}
   }
-}
+	@AfterTest
+	public void test() {
+		if(driver!=null) {
+			driver.quit();}
+		}
+		
+	}

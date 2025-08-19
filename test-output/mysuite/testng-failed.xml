@@ -4,11 +4,35 @@
   <test thread-count="5" name="chrometest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Pack1.Tc013">
+      <class name="Pack1.Lab9_lab3assertioncrossbrowser">
         <methods>
-          <include name="test" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="runTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Pack1.Tc013 -->
+      </class> <!-- Pack1.Lab9_lab3assertioncrossbrowser -->
+      <class name="Pack1.Lab9_lab4assertioncrossbrowser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="runTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Pack1.Lab9_lab4assertioncrossbrowser -->
     </classes>
   </test> <!-- chrometest(failed) -->
+  <test thread-count="5" name="edgetest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="Pack1.Lab9_lab3assertioncrossbrowser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="runTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Pack1.Lab9_lab3assertioncrossbrowser -->
+      <class name="Pack1.Lab9_lab4assertioncrossbrowser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="runTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Pack1.Lab9_lab4assertioncrossbrowser -->
+    </classes>
+  </test> <!-- edgetest(failed) -->
 </suite> <!-- Failed suite [mysuite] -->
