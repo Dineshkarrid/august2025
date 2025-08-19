@@ -1,99 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T18:08:43 IST" name="Suite" finished-at="2025-08-18T18:08:58 IST" duration-ms="14321">
+  <suite started-at="2025-08-20T00:28:07 IST" name="mysuite" finished-at="2025-08-20T00:28:23 IST" duration-ms="15563">
     <groups>
     </groups>
-    <test started-at="2025-08-18T18:08:43 IST" name="Test" finished-at="2025-08-18T18:08:58 IST" duration-ms="14321">
-      <class name="Pack1.Lab8_usingtestng">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:43 IST" name="beforeSuite" finished-at="2025-08-18T18:08:43 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:43 IST" name="beforeTest" finished-at="2025-08-18T18:08:43 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:43 IST" name="beforeClass" finished-at="2025-08-18T18:08:43 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:43 IST" name="beforeMethod" finished-at="2025-08-18T18:08:48 IST" duration-ms="4850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="firsttest()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:48 IST" name="firsttest" finished-at="2025-08-18T18:08:49 IST" duration-ms="1002" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firsttest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:49 IST" name="afterMethod" finished-at="2025-08-18T18:08:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:49 IST" name="afterClass" finished-at="2025-08-18T18:08:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:58 IST" name="afterTest" finished-at="2025-08-18T18:08:58 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Pack1.Lab8_usingtestng@3bd82cf5]" started-at="2025-08-18T18:08:58 IST" name="afterSuite" finished-at="2025-08-18T18:08:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- Pack1.Lab8_usingtestng -->
-      <class name="Pack1.Lab8_usingtestngforlab4">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:43 IST" name="beforeSuite" finished-at="2025-08-18T18:08:43 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:43 IST" name="beforeTest" finished-at="2025-08-18T18:08:43 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:49 IST" name="beforeClass" finished-at="2025-08-18T18:08:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:49 IST" name="beforeMethod" finished-at="2025-08-18T18:08:53 IST" duration-ms="4092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:53 IST" name="f" data-provider="dp" finished-at="2025-08-18T18:08:58 IST" duration-ms="4333" status="PASS">
+    <test started-at="2025-08-20T00:28:07 IST" name="chrometest" finished-at="2025-08-20T00:28:11 IST" duration-ms="3412">
+      <class name="Pack1.Tc013">
+        <test-method signature="test(java.lang.String)[pri:0, instance:Pack1.Tc013@62379589]" started-at="2025-08-20T00:28:07 IST" name="test" finished-at="2025-08-20T00:28:11 IST" duration-ms="3364" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:58 IST" name="afterMethod" finished-at="2025-08-18T18:08:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test -->
+      </class> <!-- Pack1.Tc013 -->
+    </test> <!-- chrometest -->
+    <test started-at="2025-08-20T00:28:11 IST" name="chrometet" finished-at="2025-08-20T00:28:15 IST" duration-ms="4062">
+      <class name="Pack1.Tc013">
+        <test-method signature="test(java.lang.String)[pri:0, instance:Pack1.Tc013@b2c9a9c]" started-at="2025-08-20T00:28:11 IST" name="test" finished-at="2025-08-20T00:28:15 IST" duration-ms="4057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:58 IST" name="afterClass" finished-at="2025-08-18T18:08:58 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test -->
+      </class> <!-- Pack1.Tc013 -->
+    </test> <!-- chrometet -->
+    <test started-at="2025-08-20T00:28:15 IST" name="chrometesjjht" finished-at="2025-08-20T00:28:23 IST" duration-ms="8064">
+      <class name="Pack1.Tc013">
+        <test-method signature="test(java.lang.String)[pri:0, instance:Pack1.Tc013@fa4c865]" started-at="2025-08-20T00:28:15 IST" name="test" finished-at="2025-08-20T00:28:23 IST" duration-ms="8053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:58 IST" name="afterTest" finished-at="2025-08-18T18:08:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Pack1.Lab8_usingtestngforlab4@24313fcc]" started-at="2025-08-18T18:08:58 IST" name="afterSuite" finished-at="2025-08-18T18:08:58 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- Pack1.Lab8_usingtestngforlab4 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- Pack1.Tc013 -->
+    </test> <!-- chrometesjjht -->
+  </suite> <!-- mysuite -->
 </testng-results>
