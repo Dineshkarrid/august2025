@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class Lab9_lab4assertioncrossbrowser {
-    WebDriver driver;
+    WebDriver driver=null;
 
     @Parameters("browser")
     @Test

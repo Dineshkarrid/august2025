@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Lab9_lab3crossbrowser {
-WebDriver driver;
+WebDriver driver=null;
 	@Parameters("browser")
   @Test
   public void test1(String browser) {

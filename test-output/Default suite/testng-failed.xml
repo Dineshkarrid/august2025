@@ -3,12 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pack1.Lab9_lab3assertioncrossbrowser">
+      <class name="Pack1.Tc012_for_pom">
         <methods>
-          <include name="tearDown"/>
-          <include name="runTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Pack1.Lab9_lab3assertioncrossbrowser -->
+      </class> <!-- Pack1.Tc012_for_pom -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
