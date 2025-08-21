@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pack1.Tc012_testng_pagefactory">
+      <class name="Pack1.Tc012_testng_pagefactoryexceldata">
         <methods>
-          <include name="f" invocation-numbers="0 1"/>
-          <include name="beforeMethod"/>
+          <include name="f"/>
           <include name="beforeClass"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="afterSuite"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Pack1.Tc012_testng_pagefactory -->
+      </class> <!-- Pack1.Tc012_testng_pagefactoryexceldata -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T01:37:05 IST" name="Default suite" finished-at="2025-08-21T01:37:21 IST" duration-ms="15776">
+  <suite started-at="2025-08-21T13:20:06 IST" name="Default suite" finished-at="2025-08-21T13:20:29 IST" duration-ms="23131">
     <groups>
     </groups>
-    <test started-at="2025-08-21T01:37:05 IST" name="Default test" finished-at="2025-08-21T01:37:21 IST" duration-ms="15776">
-      <class name="Pack1.Tc012_testng_pagefactory">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:05 IST" name="beforeSuite" finished-at="2025-08-21T01:37:05 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:05 IST" name="beforeTest" finished-at="2025-08-21T01:37:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:05 IST" name="beforeClass" finished-at="2025-08-21T01:37:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:05 IST" name="beforeMethod" finished-at="2025-08-21T01:37:10 IST" duration-ms="4805" status="PASS">
+    <test started-at="2025-08-21T13:20:06 IST" name="Default test" finished-at="2025-08-21T13:20:29 IST" duration-ms="23131">
+      <class name="Pack1.Tc012_testng_pagefactoryexceldata">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:07 IST" name="beforeMethod" finished-at="2025-08-21T13:20:14 IST" duration-ms="7441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:10 IST" name="f" data-provider="dp" finished-at="2025-08-21T01:37:13 IST" duration-ms="3256" status="PASS">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:14 IST" name="f" data-provider="dp" finished-at="2025-08-21T13:20:16 IST" duration-ms="2239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,47 +27,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:13 IST" name="afterMethod" finished-at="2025-08-21T01:37:14 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:16 IST" name="afterMethod" finished-at="2025-08-21T13:20:17 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:14 IST" name="beforeMethod" finished-at="2025-08-21T01:37:18 IST" duration-ms="4133" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:17 IST" name="beforeMethod" finished-at="2025-08-21T13:20:20 IST" duration-ms="3735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:18 IST" name="f" data-provider="dp" finished-at="2025-08-21T01:37:21 IST" duration-ms="3187" status="PASS">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:20 IST" name="f" data-provider="dp" finished-at="2025-08-21T13:20:22 IST" duration-ms="2200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pooja]]>
+                <![CDATA[hema]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin123]]>
+                <![CDATA[welcome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:21 IST" name="afterMethod" finished-at="2025-08-21T01:37:21 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:22 IST" name="afterMethod" finished-at="2025-08-21T13:20:23 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:21 IST" name="afterClass" finished-at="2025-08-21T01:37:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:23 IST" name="beforeMethod" finished-at="2025-08-21T13:20:27 IST" duration-ms="4061" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:21 IST" name="afterTest" finished-at="2025-08-21T01:37:21 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:27 IST" name="f" data-provider="dp" finished-at="2025-08-21T13:20:29 IST" duration-ms="2165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[geeta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[apple]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Pack1.Tc012_testng_pagefactory@3270d194]" started-at="2025-08-21T01:37:21 IST" name="afterSuite" finished-at="2025-08-21T01:37:21 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Pack1.Tc012_testng_pagefactoryexceldata@6f03482]" started-at="2025-08-21T13:20:29 IST" name="afterMethod" finished-at="2025-08-21T13:20:29 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- Pack1.Tc012_testng_pagefactory -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Pack1.Tc012_testng_pagefactoryexceldata -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

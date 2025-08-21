@@ -1,168 +1,80 @@
 package Pack1;
 import org.testng.annotations.Test;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import io.github.bonigarcia.wdm.WebDriverManager;
- 
 import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.AfterMethod;
-
 import org.testng.annotations.DataProvider;
-
-import org.testng.annotations.BeforeClass;
-
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.openqa.selenium.support.PageFactory;
 
-import org.testng.annotations.AfterClass;
-
-import org.testng.annotations.BeforeTest;
-
-import org.testng.annotations.AfterTest;
-
-import org.testng.annotations.BeforeSuite;
-
-import org.testng.annotations.AfterSuite;
- 
 public class Tc012_testng_pagefactoryexceldata {
 
-	WebDriver driver;
+    WebDriver driver;
 
-  @Test(dataProvider = "dp")
+    // Test Method with DataProvider
+    @Test(dataProvider = "dp")
+    public void f(String username, String password) throws Exception {
+        String title = driver.getTitle();
+        System.out.println("The Title is: " + title);
 
-  public void f(String username, String password) throws InterruptedException {
+        Thread.sleep(2000);
 
-	  	String title=driver.getTitle();
+        // PageFactory initialization
+        login_pagefactory obj = PageFactory.initElements(driver, login_pagefactory.class);
 
-		System.out.println("The Title is:"+title);
+        // Perform login actions
+        obj.enterusername(username);
+        obj.enterpassword(password);
+        obj.clickonlogin();
+    }
 
-		Thread.sleep(3000);
+    // Before each test
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("Before method");
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    }
 
-		//WebElement username=driver.findElement(By.name("username"));
+    // After each test
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("After method");
+        driver.quit();
+    }
 
-		//username.sendKeys("Admin");
+    // DataProvider to fetch data from Excel
+    @DataProvider
+    public Object[][] dp() throws IOException {
+        String projectpath = System.getProperty("user.dir");
+        File file1 = new File(projectpath + "\\data.xlsx");   // Excel file should be inside project folder
+        FileInputStream fs = new FileInputStream(file1);
 
-		login_pagefactory obj=PageFactory.initElements(driver, login_pagefactory.class);
+        XSSFWorkbook workbook = new XSSFWorkbook(fs);
+        XSSFSheet worksheet = workbook.getSheetAt(0);
 
-		obj.enterusername(username);
+        int rowcount = worksheet.getPhysicalNumberOfRows();
+        int colcount = worksheet.getRow(0).getPhysicalNumberOfCells();
 
-		obj.enterpassword(password);
+        Object[][] data = new Object[rowcount][colcount];
 
-    	obj.clickonlogin();
+        for (int i = 0; i < rowcount; i++) {
+            for (int j = 0; j < colcount; j++) {
+                data[i][j] = worksheet.getRow(i).getCell(j).getStringCellValue();
+            }
+        }
 
-	//	driver.findElement(By.name("username")).sendKeys(username);
+        workbook.close();
+        fs.close();
 
-		//driver.findElement(By.name("password")).sendKeys(password);
-
-	//	driver.findElement(By.xpath("//button[@type='submit']")).click();
-
-	  }
-
-  @BeforeMethod
-
-  public void beforeMethod() {
-
-	  System.out.println("Before method");
-
-	  WebDriverManager.chromedriver().setup();
-
-		driver=new ChromeDriver();
-
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
-  }
-
-  @AfterMethod
-
-  public void afterMethod() {
-
-	  System.out.println("After method");
-
-	  driver.quit();
-
-  }
- 
- 
-  @DataProvider
-  public Object[][] dp() throws IOException {
-  String[][] data=new String[3][2];
-	  
-	  String projectpath=System.getProperty("user.dir")  ;
-	  File file1=new File(projectpath+"\\data.xlsx");
-	  FileInputStream fs=new FileInputStream(file1);
-	  XSSFWorkbook workbook=new XSSFWorkbook(fs);
-	  XSSFSheet worksheet=workbook.getSheetAt(0);
-	  int rowcount=worksheet.getPhysicalNumberOfRows();
-	  System.out.println("rows:"+rowcount);
-	  
-	  for(int i=0;i<=rowcount;i++)
-	  {
-		  data[i][0]=worksheet.getRow(i).getCell(0).getStringCellValue();
-	 
-		  data[i][1]=worksheet.getRow(i).getCell(1).getStringCellValue();
-	  }
-	  
-	  return data;
-	  
-    
-    };
-
-  @BeforeClass
-
-  public void beforeClass() {
-
-	  System.out.println("Before class");
-
-  }
- 
-  @AfterClass
-
-  public void afterClass() {
-
-	  System.out.println("After Class");
-
-  }
- 
-  @BeforeTest
-
-  public void beforeTest() {
-
-	  System.out.println("Before Test");
-
-  }
- 
-  @AfterTest
-
-  public void afterTest() {
-
-	  System.out.println("After Test");
-
-  }
- 
-  @BeforeSuite
-
-  public void beforeSuite() {
-
-	  System.out.println("Before Suite");
-
-  }
- 
-  @AfterSuite
-
-  public void afterSuite() {
-
-	  System.out.println("After Suite");
-
-  }
- 
+        return data;
+    }
 }
-
