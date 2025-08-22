@@ -23,7 +23,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 //import io.github.bonigarcia.wdm.WebDriverManager;
  
-public class Tc015_properties {
+public class Lab12_testng_properties {
  
 	public static void main(String[] args) throws InterruptedException, IOException {
 
